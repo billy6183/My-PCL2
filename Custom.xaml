@@ -1,0 +1,117 @@
+﻿
+<!-- 这是 PCL2 的主页自定义文件。你可以通过修改这个文件来自定义 PCL2 主页：添加文本、打开网页、启动游戏，等等。
+     如果你倒腾这个文件把 PCL2 玩炸了，把这个文件直接删除就行了。
+     如果你懂得 WPF 的布局文件编写，你甚至可以做出不少的新玩意儿…… -->
+
+<local:MyCard Title="赞助" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock Margin="0,0,0,4"
+                   Text="经济允许的话赞助一下@龙腾猫跃" />
+        <local:MyButton Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="@龙腾猫跃" EventType="打开网页" EventData="https://afdian.net/@LTCat" />
+    </StackPanel>
+</local:MyCard>
+    
+<local:MyCard Title="打开" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <!-- 这是第一行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="打开 B 站" EventType="打开网页" EventData="https://www.bilibili.com/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 Hypixel" EventType="打开网页" EventData="https://hypixel.net/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 官网" EventType="打开网页" EventData="https://www.minecraft.net/en-us/" />
+        </StackPanel>
+        <!-- 这是第二行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Red"
+                   Text="打开 我的B站主页" EventType="打开网页" EventData="https://space.bilibili.com/669543955?spm_id_from=333.1007.0.0" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 MCBBS" EventType="打开网页" ToolTip="https://www.mcbbs.net/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 Github" EventType="打开网页" EventData="https://www.github.com/" />
+        </StackPanel>
+        <!-- 这是第三行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="打开 Forge" EventType="打开网页" EventData="https://files.minecraftforge.net/net/minecraftforge/forge/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 Fabric" EventType="打开网页" EventData="https://fabricmc.net/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 OptiFine" EventType="打开网页" EventData="https://www.optifine.net/downloads/" />
+        </StackPanel>
+        <!-- 这是第四行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Red"
+                   Text="打开 MC百科" EventType="打开网页" EventData="https://www.mcmod.cn/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="刷新 主页" EventType="刷新主页" ToolTip="这通常用于联网更新主页时刷新信息，对本地文件没啥用" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 中国版" EventType="打开网页" EventData="https://mc.163.com/" />
+        </StackPanel>
+        <!-- 这是第五行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="打开 CurseForge" EventType="打开网页" EventData="https://www.curseforge.com/minecraft/modpacks" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 Wiki" EventType="打开网页" EventData="https://minecraft.fandom.com/zh/wiki/Minecraft_Wiki" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 蓝奏云" EventType="打开网页" EventData="https://up.woozooo.com/mydisk.php" />
+        </StackPanel>
+        <!-- 这是第六行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Red"
+                   Text="打开 至美化" EventType="打开网页" EventData="https://zhutix.com/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打不开" EventType="打开网页" ToolTip="" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 百度" EventType="打开网页" EventData="https://www.baidu.com/" />
+        </StackPanel>
+        <!-- 这是第七行 -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="打开 西瓜视频" EventType="打开网页" EventData="https://www.ixigua.com/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 爱奇艺" EventType="打开网页" EventData="https://www.iqiyi.com/" />
+            <local:MyButton Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="打开 腾讯视频" EventType="打开网页" EventData="https://v.qq.com/" />
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="启动游戏" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+      <local:MyButton Margin="0,8,0,10" Width="250" Height="35"
+                 Text="启动 Minecraft 1.12.2" EventType="启动游戏" EventData="1.12.2" />
+      <local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+                 Text="使用 1.8.9 进入 Hypixel" EventType="启动游戏" EventData="1.8.9|mc.hypixel.net" ToolTip="服务器 IP：mc.hypixel.net" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="其他命令" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyButton Margin="0,8,0,0" Width="250" Height="35"
+                   Text="下载 MC百科 的 Logo" EventType="下载文件" EventData="https://www.mcmod.cn/images/logo.gif" />
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="词条" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint Text="未经授权，不可搬运" />
+        <local:MyHint Margin="0,8,0,2" IsWarn="False"
+                   Text="作者：billy_youxi" />
+        <TextBlock Margin="0,6,0,0"
+                   Text="可能有BUG" />
+   </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="PCL2" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+    <Image Source="https://pic1.afdiancdn.com/user/df2dfad2960911e89c5252540025c377/common/0b2e5b9a6596eaee20f00f56da30f502_w1500_h300_s457.jpg?imageView2/1/w/3000/h/800" HorizontalAlignment="Center"></Image>
+</StackPanel>
+</local:MyCard>
+
+<!--IsEnabled-->
+
+<local:MyHint Margin="0,0,0,15" Text="作者：billy_youxi" IsWarn="False" />
